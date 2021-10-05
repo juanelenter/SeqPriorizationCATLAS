@@ -27,9 +27,11 @@ More information on how explain scores are computed can be found in the [origina
 
 The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs.
 
-### What's this notebook?
+### What's in this repository?
 
-Steps 1, 2 and 3 have already been completed, this jupyter notebook corresponds to step 4 and 5: analyzing/comparing explain scores.
+The bash scripts for Steps 1, 2 and 3: 
+The python modules for steps 4 and 5: 
+Jupyter notebooks for illustration:
 
 
 We now compute the similarity (distance) between the explain scores of the model trained on ITL6GL data and the rest of the models at each peak.
