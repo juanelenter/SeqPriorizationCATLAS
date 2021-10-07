@@ -22,7 +22,7 @@ If the models are not *good* enough go back to step 1.
 
 - 5. Check if the subsequences found match a known motif (using [TomTom](https://meme-suite.org/meme/tools/tomtom)) and create a list of candidate subsequences.
 
-### The assumption
+## The assumption
 
 We are assuming that explain scores (defined as the predictive contribution of every nucleotide in an input DNA sequence to its associated output label through the lens of a gkm-SVM model) **accurately** reflect the effect on chromatin accesibility each base-pair has.
 
@@ -30,9 +30,11 @@ More information on how explain scores are computed can be found in the [origina
 
 The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs.
 
-### How to measure distance between explain scores at peak regions?
+## How to measure distance between explain scores at peak regions?
 
-<img src="images/disteq.png" alt="drawing" style="width:100px;"/>
+<p align="center">
+  <img src="images/disteq.png" alt="drawing" style="width:600px;"/>
+</p>
 
 Basically this splits the peak in overlapping subsequences of length $w$, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
 
