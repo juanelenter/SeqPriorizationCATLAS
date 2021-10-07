@@ -1,14 +1,17 @@
 # Sequence priorization
 
-<img src="images/mousedna.jpg" alt="drawing" style="width:200px;"/>
+<p align="center">
+  <img src="images/mousedna.jpg" alt="drawing" style="width:300px;" class="center"/>
+</p>
 
-### The problem
+## The problem
 
 The goal is to find subsequences of mouse DNA which impact chromatin accessibility significantly in one cell type, but have little or none impact in other cell types. In other words, we are looking for cell-type specific motifs that potentially play a role in gene expression and regulation.
 
-### The plan
+## The plan
 
 - 1. Train SVMs on chromatin accesibility data on 10 different mouse cell types.
+They are actually nonlinear gapped k-mer SVMs.
 
 - 2. Evaluate performance of the trained models.
 If the models are not *good* enough go back to step 1.
@@ -27,22 +30,27 @@ More information on how explain scores are computed can be found in the [origina
 
 The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs.
 
-### What's this notebook?
+### How to measure distance between explain scores at peak regions?
 
-Steps 1, 2 and 3 have already been completed, this jupyter notebook corresponds to step 4 and 5: analyzing/comparing explain scores.
-
-
-We now compute the similarity (distance) between the explain scores of the model trained on ITL6GL data and the rest of the models at each peak.
-
-We are using the *max sliding window difference* distance function. This distance measure is defined in the following way:
-
-$$
-d(\mathbf{x},\mathbf{y}) = max_{i = 1,...,N-w \\  w \in \mathbf{N}} { ||\mathbf{x}[i:i+w] - \mathbf{y}[i:i+w]||^2 \; }
-$$
+<img src="images/disteq.png" alt="drawing" style="width:100px;"/>
 
 Basically this splits the peak in overlapping subsequences of length $w$, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
 
 *Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter $w$ needs to be tuned. The bigger $w$, the longer the motifs that are captured.
+
+
+### Cell Types
+
+The cell types of interest are: CLAGL, D1MSN, D2MSN, ITL6GL, NPGL, PTGL, PVGA, SSTGA, VIPGA.
+You can find more about the properties of these cell types in the [CATLAS](http://catlas.org/mousebrain/#!/cellType). 
+
+## What's in this repository?
+
+- The bash scripts for Steps 1, 2 and 3. 
+- The python modules for Steps 4 and 5.
+- Jupyter notebooks for illustration and analysis of the results.
+
+## Analysis and results examples
 
 ### ITL6GL (Excitatory neurons) specific peaks analysis
 
