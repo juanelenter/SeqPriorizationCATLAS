@@ -64,11 +64,11 @@ The candidate peaks are those in which the average distance between the explain 
 ### Our candidates for ITL6GL specificity
 
 <p align="center">
-  <img src="images/peakthreshITL6GL.jpg" alt="drawing" style="width:300px;" class="center"/>
+  <img src="images/peakthreshITL6GL.png" alt="drawing" style="width:300px;" class="center"/>
 </p>
 
 <p align="center">
-  <img src="images/candidatelistITL6GL.jpg" alt="drawing" style="width:300px;" class="center"/>
+  <img src="images/candidatelistITL6GL.png" alt="drawing" style="width:500px;" class="center"/>
 </p>
 
 
