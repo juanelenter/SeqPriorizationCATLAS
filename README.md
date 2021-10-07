@@ -1,7 +1,7 @@
 # Sequence priorization
 
 <p align="center">
-  <img src="images/mousedna.jpg" alt="drawing" style="width:200px;" class="center"/>
+  <img src="images/mousedna.jpg" alt="drawing" style="width:300px;" class="center"/>
 </p>
 
 ## The problem
@@ -29,6 +29,15 @@ We are assuming that explain scores (defined as the predictive contribution of e
 More information on how explain scores are computed can be found in the [original paper](https://academic.oup.com/bioinformatics/article/35/14/i173/5529147).
 
 The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs.
+
+### How to measure distance between explain scores at peak regions?
+
+<img src="images/disteq.png" alt="drawing" style="width:100px;"/>
+
+Basically this splits the peak in overlapping subsequences of length $w$, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
+
+*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter $w$ needs to be tuned. The bigger $w$, the longer the motifs that are captured.
+
 
 ### Cell Types
 
