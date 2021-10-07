@@ -127,7 +127,7 @@ Looking up the second candidate motif (TGACATTT) in TOM TOM yields the following
 ### Group behaviour
 
 <p align="center">
-<img src="images/groupings.png" alt="drawing" style="width:500px;"/>
+<img src="images/groupings.png" alt="drawing" style="width:750px;"/>
 </p>
 
 
