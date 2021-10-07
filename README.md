@@ -41,9 +41,7 @@ You can find more about the properties of these cell types in the [CATLAS](http:
 - The python modules for Steps 4 and 5.
 - Jupyter notebooks for illustration and analysis of the results.
 
-## Result example
-The results corresponding to each cell type can be found in the respective noteboo
-
+## Analysis and results examples
 
 ### ITL6GL (Excitatory neurons) specific peaks analysis
 
