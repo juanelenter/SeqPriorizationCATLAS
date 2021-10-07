@@ -90,6 +90,10 @@ The candidate peaks are those in which the average distance between the explain 
 
 ### CLAGL
 
+<p align="center">
+<img src="images/candidlistCLAGL.png" alt="drawing" style="width:500px;"/>
+</p>
+
 Candidate 1 actually has 2 examples of motifs that pop up only in CLAGL.
 
 <p align="center">
@@ -117,6 +121,15 @@ Looking up the second candidate motif (TGACATTT) in TOM TOM yields the following
 <p align="center">
 <img src="images/candidate492tomtom.png" alt="drawing" style="width:350px;"/>
 </p>
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+### Group behaviour
+
+<p align="center">
+<img src="images/groupings.png" alt="drawing" style="width:500px;"/>
+</p>
+
 
 
 
