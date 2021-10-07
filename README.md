@@ -52,20 +52,29 @@ You can find more about the properties of these cell types in the [CATLAS](http:
 - The python modules for Steps 4 and 5.
 - Jupyter notebooks for illustration and analysis of the results.
 
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
 ## Analysis and results examples
 
-### ITL6GL (Excitatory neurons) specific peaks analysis
-
--------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------
+### ITL6GL 
 
 The candidate peaks are those in which the average distance between the explain scores of the ITL6GL model and the explain scores of the rest of the models is in the top 2% (above red line). 
 
-###### Our candidates for ITL6GL specificity
+### Our candidates for ITL6GL specificity
 
-#### Candidates ITL6GL
+<p align="center">
+  <img src="images/peakthreshITL6GL.jpg" alt="drawing" style="width:300px;" class="center"/>
+</p>
+
+<p align="center">
+  <img src="images/candidatelistITL6GL.jpg" alt="drawing" style="width:300px;" class="center"/>
+</p>
+
+
+### Closer look at the peaks ITL6GL
+
 <img src="images/itl6gl455.png" alt="drawing" style="width:800px;"/>
-
 
 <img src="images/itl6gl514.png" alt="drawing" style="width:800px;"/>
 
