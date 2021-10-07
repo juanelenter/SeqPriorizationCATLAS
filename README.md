@@ -72,13 +72,52 @@ The candidate peaks are those in which the average distance between the explain 
 </p>
 
 
-### Closer look at the peaks ITL6GL
+### Closer look at the peaks
 
-<img src="images/itl6gl455.png" alt="drawing" style="width:800px;"/>
+<p align="center">
+<img src="images/itl6gl455.png" alt="drawing" style="width:500px;"/>
+</p>
 
-<img src="images/itl6gl514.png" alt="drawing" style="width:800px;"/>
+<p align="center">
+<img src="images/itl6gl514.png" alt="drawing" style="width:500px;"/>
+</p>
 
-<img src="images/itl6gltomtom.png" alt="drawing" style="width:800px;"/>
+<p align="center">
+<img src="images/itl6gltomtom.png" alt="drawing" style="width:300px;"/>
+</p>
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+### CLAGL
+
+Candidate 1 actually has 2 examples of motifs that pop up only in CLAGL.
+
+<p align="center">
+<img src="images/candidate1.png" alt="drawing" style="width:500px;"/>
+</p>
+
+<p align="center">
+<img src="images/candidate1bis.png" alt="drawing" style="width:500px;"/>
+</p>
+
+Looking up the second candidate motif (TGACATTT) in TOM TOM yields the following match in mouse DNA:
+
+<p align="center">
+<img src="images/candidate1tomtom.png" alt="drawing" style="width:350px;"/>
+</p>
+
+<p align="center">
+<img src="images/candidate3.png" alt="drawing" style="width:500px;"/>
+</p>
+
+<p align="center">
+<img src="images/candidate492.png" alt="drawing" style="width:500px;"/>
+</p>
+
+<p align="center">
+<img src="images/candidate492tomtom.png" alt="drawing" style="width:350px;"/>
+</p>
+
 
 
 
