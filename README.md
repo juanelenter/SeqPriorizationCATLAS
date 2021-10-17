@@ -10,8 +10,7 @@ The goal is to find subsequences of mouse DNA which impact chromatin accessibili
 
 ## The plan
 
-- 1. Train SVMs on chromatin accesibility data on 10 different mouse cell types.
-They are actually nonlinear gapped k-mer SVMs.
+- 1. Train SVMs (nonlinear gapped k-mer SVMS to be precise) on chromatin accesibility data on 10 different mouse cell types.
 
 - 2. Evaluate performance of the trained models.
 If the models are not *good* enough go back to step 1.
@@ -36,10 +35,11 @@ The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the
   <img src="images/disteq.png" alt="drawing" style="width:600px;"/>
 </p>
 
-Basically this splits the peak in overlapping subsequences of length $w$, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
+Basically this splits the peak in overlapping subsequences of length w, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
 
-*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter $w$ needs to be tuned. The bigger $w$, the longer the motifs that are captured.
+*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter w needs to be tuned. If w is too small, spurious motifs may be captured, and if w is too large, most short motifs are missed.
 
+The values chosen for were 8, 13 and 20.
 
 ### Cell Types
 
