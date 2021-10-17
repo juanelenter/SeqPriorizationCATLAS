@@ -3,8 +3,8 @@
 models=/oak/stanford/groups/akundaje/projects/aav/svm_training
 indir=/oak/stanford/groups/akundaje/projects/aav/explain_inputs
 outdir=/oak/stanford/groups/akundaje/projects/aav/explain_scores
-explain_script=/home/groups/akundaje/jelenter/SVM_pipelines/interpret/run_explain_hyp.sh
-lsgkm_dir=/home/groups/akundaje/jelenter/lsgkm/src
+explain_script=***Insert path to run_explain_hyp.sh script***
+lsgkm_dir=***Insert path to lsgkm***
 
 [[ -d $outdir/logs ]] || mkdir $outdir/logs
 

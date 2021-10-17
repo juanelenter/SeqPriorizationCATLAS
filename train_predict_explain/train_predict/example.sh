@@ -3,7 +3,7 @@
 
 indir=/oak/stanford/groups/akundaje/projects/aav/svm_inputs
 outdir=/oak/stanford/groups/akundaje/projects/aav/svm_training
-lsgkm_dir=/home/groups/akundaje/jelenter/lsgkm/src
+lsgkm_dir=***Insert your lsgkm dir***
 
 #for task in CLAGL D1MSN D2MSN ITL6GL NPGL PTGL PVGA SSTGA VIPGA 
 for task in VIPGA
