@@ -10,8 +10,7 @@ The goal is to find subsequences of mouse DNA which impact chromatin accessibili
 
 ## The plan
 
-- 1. Train SVMs on chromatin accesibility data on 10 different mouse cell types.
-They are actually nonlinear gapped k-mer SVMs.
+- 1. Train SVMs (nonlinear gapped k-mer SVMS to be precise) on chromatin accesibility data on 10 different mouse cell types.
 
 - 2. Evaluate performance of the trained models.
 If the models are not *good* enough go back to step 1.
