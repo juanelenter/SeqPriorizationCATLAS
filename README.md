@@ -37,7 +37,7 @@ The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the
 
 Basically this splits the peak in overlapping subsequences of length w, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
 
-*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter $w$ needs to be tuned. The bigger $w$, the longer the motifs that are captured.
+*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter w needs to be tuned. If w is too small, spurious motifs may be captured, and if w is too large, most short motifs are missed.
 
 The values chosen for were 8, 13 and 20.
 
