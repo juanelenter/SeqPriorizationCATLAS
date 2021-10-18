@@ -27,7 +27,7 @@ We are assuming that explain scores (defined as the predictive contribution of e
 
 More information on how explain scores are computed can be found in the [original paper](https://academic.oup.com/bioinformatics/article/35/14/i173/5529147).
 
-The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs.
+The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the SVMs. Go to the [KundajeLab lsgkm repo](https://github.com/kundajelab/lsgkm) in order to install it (you will need it if you want to train the models or compute more explain scores).
 
 ## How to measure distance between explain scores at peak regions?
 
@@ -51,6 +51,7 @@ You can find more about the properties of these cell types in the [CATLAS](http:
 - The scripts for Steps 1, 2 and 3. (Which is a modified version of [SVM pipeline repo](https://github.com/kundajelab/SVM_pipelines).)
 - The python modules for Steps 4 and 5.
 - Jupyter notebooks for illustration and analysis of the results.
+
 
 -------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------
