@@ -52,6 +52,7 @@ You can find more about the properties of these cell types in the [CATLAS](http:
 - The python modules for Steps 4 and 5.
 - Jupyter notebooks for illustration and analysis of the results.
 
+The genome browser session can be accessed at: [http://epigenomegateway.wustl.edu/browser/](http://epigenomegateway.wustl.edu/browser/) with the session id: ```47706800-10a5-11ec-aee8-2b4950639ecc``` .
 
 -------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------
