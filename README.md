@@ -37,7 +37,7 @@ The C package [lsgkm](https://github.com/kundajelab/lsgkm) was used to train the
 
 Basically this splits the peak in overlapping subsequences of length w, computes the L2 distance between each pair of subsequences, and takes the max of those distances. 
 
-*Why this distance function?* We want to check if there exists a subsequence which differs significantly. Thus, global similarity measures may not always suitable. The main drawback of this distance is that the parameter w needs to be tuned. If w is too small, spurious motifs may be captured, and if w is too large, most short motifs are missed.
+*Why this distance function?* We want to check if, in a given peak (>200 basepairs) there exists a subsequence (~10 basepairs) which differs significantly. Thus, global similarity measures are not suitable. The main drawback of this distance is that the parameter w needs to be tuned. If w is too small, spurious motifs may be captured, and if w is too large, most short motifs are missed.
 
 The values chosen for were 8, 13 and 20.
 
@@ -52,7 +52,11 @@ You can find more about the properties of these cell types in the [CATLAS](http:
 - The python modules for Steps 4 and 5.
 - Jupyter notebooks for illustration and analysis of the results.
 
-The genome browser session can be accessed at: [http://epigenomegateway.wustl.edu/browser/](http://epigenomegateway.wustl.edu/browser/?bundle=47706800-10a5-11ec-aee8-2b4950639ecc) with the session id: ```47706800-10a5-11ec-aee8-2b4950639ecc``` .
+The genome browser session can be accessed at: [Juan's genome browser session](http://epigenomegateway.wustl.edu/browser/?bundle=47706800-10a5-11ec-aee8-2b4950639ecc).
+
+### Where to start?
+
+A detailed, step-by-step example of how these motifs are detected and analyzed can be found in [this](https://github.com/juanelenter/SeqPriorizationCATLAS/blob/main/analysis/Step-By-Step-Example-CLAGL.ipynb) jupyter notebook.
 
 -------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------
